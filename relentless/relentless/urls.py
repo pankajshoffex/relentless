@@ -18,6 +18,8 @@ from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 
+admin.site.site_header = "RELENTLESS"
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('api.urls', namespace='api')),
